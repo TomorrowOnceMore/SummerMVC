@@ -17,16 +17,49 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for summer-parent" enabled="true">
+      <profile default="false" name="Annotation profile for summer-commons" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="summer-parent" />
+        <module name="summer-commons" />
+      </profile>
+      <profile default="false" name="Annotation profile for summer-manager-pojo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="summer-manager-pojo" />
+      </profile>
+      <profile default="false" name="Annotation profile for summer-manager-dao" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="summer-manager-dao" />
+      </profile>
+      <profile default="false" name="Annotation profile for summer-manager-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="summer-manager-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for summer-manager-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="summer-parent" target="1.7" />
+      <module name="summer-commons" target="1.8" />
+      <module name="summer-manager" target="1.8" />
+      <module name="summer-manager-dao" target="1.8" />
+      <module name="summer-manager-pojo" target="1.8" />
+      <module name="summer-manager-service" target="1.8" />
+      <module name="summer-manager-web" target="1.8" />
+      <module name="summer-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

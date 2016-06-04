@@ -6,7 +6,12 @@
 
     <groupId>com.summermvc</groupId>
     <artifactId>summer-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../summer-commons</module>
+        <module>../summer-manager</module>
+    </modules>
     <properties>
         <junit.version>4.12</junit.version>
         <spring.version>4.2.6.RELEASE</spring.version>
@@ -19,9 +24,9 @@
         <jackson.version>2.7.4</jackson.version>
         <druid.version>1.0.20</druid.version>
         <httpclient.version>4.5.2</httpclient.version>
-        <jstl.version>1.2-rev-1</jstl.version>
-        <servlet-api.version>4.0.0-b01</servlet-api.version>
-        <jsp-api.version>2.2.1-b03</jsp-api.version>
+        <jstl.version>1.2</jstl.version>
+        <servlet-api.version>3.1.0</servlet-api.version>
+        <jsp-api.version>2.2</jsp-api.version>
         <joda-time.version>2.9.4</joda-time.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-io.version>2.5</commons-io.version>
@@ -112,6 +117,12 @@
                 <artifactId>jsqlparser</artifactId>
                 <version>${jsqlparser.version}</version>
             </dependency>
+            <!-- http://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+            <dependency>
+                <groupId>org.mariadb.jdbc</groupId>
+                <artifactId>mariadb-java-client</artifactId>
+                <version>${mariadb.version}</version>
+            </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
@@ -156,18 +167,18 @@
             </dependency>
             <!-- JSP相关 -->
             <dependency>
-                <groupId>javax.servlet.jsp.jstl</groupId>
+                <groupId>jstl</groupId>
                 <artifactId>jstl</artifactId>
                 <version>${jstl.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.servlet.jsp</groupId>
-                <artifactId>servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
+                <groupId>javax.servlet.jsp</groupId>
                 <artifactId>jsp-api</artifactId>
                 <version>${jsp-api.version}</version>
                 <scope>provided</scope>
@@ -221,8 +232,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
