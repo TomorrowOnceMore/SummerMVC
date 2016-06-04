@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 
-    <properties resource="database.properties"/>
+    <properties resource="properties/database.properties"/>
     <!-- !!!! Driver Class Path !!!! -->
     <classPathEntry location="${jdbc.location}"/>
 

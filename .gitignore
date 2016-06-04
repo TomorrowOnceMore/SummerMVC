@@ -3,3 +3,4 @@
 **/target/
 **/properties/
 **/spring/applicationContext-dao.xml
+**/data
