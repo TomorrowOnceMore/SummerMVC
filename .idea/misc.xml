@@ -4,15 +4,12 @@
     <exe-path />
     <config-path />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/summer-parent/pom.xml" />
+      </list>
     </option>
-  </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="toy" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
