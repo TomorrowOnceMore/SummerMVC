@@ -11,6 +11,7 @@
     <modules>
         <module>../summer-commons</module>
         <module>../summer-manager</module>
+        <module>../generatorSqlMapCustom</module>
     </modules>
     <properties>
         <junit.version>4.12</junit.version>
@@ -38,6 +39,7 @@
         <solrj.version>6.0.1</solrj.version>
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.3</quartz.version>
+        <c3p0.version>0.9.5.2</c3p0.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -211,6 +213,13 @@
                 <artifactId>quartz</artifactId>
                 <version>${quartz.version}</version>
             </dependency>
+            <!-- http://mvnrepository.com/artifact/com.mchange/c3p0 -->
+            <dependency>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>${c3p0.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
