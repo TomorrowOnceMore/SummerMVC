@@ -1,5 +1,6 @@
 package com.summer.service;
 
+import com.summer.common.pojo.EasyUIDataGridResult;
 import com.summer.pojo.TbItem;
 
 /**
@@ -7,4 +8,7 @@ import com.summer.pojo.TbItem;
  */
 public interface ItemService {
     TbItem getItemById(int itemid);
+
+
+    EasyUIDataGridResult getItemList(int page, int rows);
 }

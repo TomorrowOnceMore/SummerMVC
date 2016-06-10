@@ -41,7 +41,5 @@
         <table tableName="${tableName.1}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true"/>
 
-        <table tableName="${tableName.2}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
-               enableUpdateByExample="true"/>
     </context>
 </generatorConfiguration>

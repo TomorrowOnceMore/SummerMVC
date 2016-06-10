@@ -1,5 +1,6 @@
 package com.summer.controller;
 
+import com.summer.common.pojo.EasyUIDataGridResult;
 import com.summer.pojo.TbItem;
 import com.summer.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,12 @@ public class ItemController {
     public TbItem getItemById(@PathVariable int itemId) {
         TbItem item = itemService.getItemById(itemId);
         return item;
+    }
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public EasyUIDataGridResult getItemList(Integer page, Integer rows) {
+        EasyUIDataGridResult result = itemService.getItemList(page, rows);
+        return result;
     }
 }
