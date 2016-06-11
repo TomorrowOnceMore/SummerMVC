@@ -15,25 +15,4 @@ import java.util.List;
  * Created by toy on 6/5/16.
  */
 public class TestPageHelper {
-
-    @Test
-    public void testPageHelper() throws Exception {
-        //get mapper agent obj
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
-        TbItemMapper itemMapper = (TbItemMapper) applicationContext.getBean(TbItemMapper.class);
-        // set page
-        PageHelper.startPage(1, 30);
-        // exec query
-        TbItemExample example = new TbItemExample();
-        List<TbItem> list = itemMapper.selectByExample(example);
-        // get page result
-        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
-        long total = pageInfo.getTotal();
-        System.out.println(total);
-        int pages = pageInfo.getPages();
-        System.out.println(pages);
-        int pageSize = pageInfo.getPageSize();
-        System.out.println(pageSize);
-    }
-
 }

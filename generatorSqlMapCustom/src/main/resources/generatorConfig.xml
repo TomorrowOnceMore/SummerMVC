@@ -6,7 +6,7 @@
 
     <properties resource="properties/database.properties"/>
     <!-- !!!! Driver Class Path !!!! -->
-    <classPathEntry location="${jdbc.location}"/>
+    <classPathEntry location="${db.location}"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -15,7 +15,7 @@
         </commentGenerator>
 
         <!-- !!!! Database Configurations !!!! -->
-        <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="${jdbc.username}" password="${jdbc.password}"/>
+        <jdbcConnection driverClass="${db.driver}" connectionURL="${db.url}" userId="${db.username}" password="${db.password}"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
@@ -41,5 +41,10 @@
         <table tableName="${tableName.1}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true"/>
 
+        <table tableName="${tableName.2}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+
+        <table tableName="${tableName.3}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
     </context>
 </generatorConfiguration>

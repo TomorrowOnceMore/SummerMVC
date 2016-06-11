@@ -50,11 +50,6 @@
             <artifactId>fastdfs-client</artifactId>
             <version>1.25.1-RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.csource</groupId>
-            <artifactId>fastdfs-client-java</artifactId>
-            <version>1.25</version>
-        </dependency>
     </dependencies>
 
 </project>

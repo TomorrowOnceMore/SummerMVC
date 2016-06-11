@@ -1,4 +1,4 @@
-package com.summer.controller;
+package com.summer.common.utils;
 
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;

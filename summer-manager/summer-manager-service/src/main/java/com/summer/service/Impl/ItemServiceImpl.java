@@ -22,7 +22,7 @@ public class ItemServiceImpl implements ItemService {
     private TbItemMapper itemMapper;
 
     @Override
-    public TbItem getItemById(int itemid) {
+    public TbItem getItemById(long itemid) {
         //itemMapper.selectByPrimaryKey(itemid);
         TbItemExample example = new TbItemExample();
         TbItemExample.Criteria criteria = example.createCriteria();

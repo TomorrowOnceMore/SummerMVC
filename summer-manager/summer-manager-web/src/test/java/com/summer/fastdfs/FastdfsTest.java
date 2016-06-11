@@ -1,6 +1,6 @@
 package com.summer.fastdfs;
 
-import com.summer.controller.FastDFSClient;
+import com.summer.common.utils.FastDFSClient;
 import org.csource.common.MyException;
 import org.csource.fastdfs.*;
 import org.junit.Test;
