@@ -1,6 +1,7 @@
 package com.summer.controller;
 
 import com.summer.common.pojo.PictureResult;
+import com.summer.common.utils.JsonUtils;
 import com.summer.service.PictureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,9 +20,10 @@ public class PictureController {
 
     @RequestMapping("/pic/upload")
     @ResponseBody
-    public PictureResult uploadFile(MultipartFile uploadFile) {
+    public String uploadFile(MultipartFile uploadFile) {
         PictureResult result = pictureService.uploadPic(uploadFile);
-        return result;
+        String json = JsonUtils.objectToJson(result);
+        return json;
     }
 
 }
