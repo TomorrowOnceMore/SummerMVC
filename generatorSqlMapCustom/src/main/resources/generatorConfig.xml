@@ -40,11 +40,25 @@
         <!-- !!!! Table Configurations !!!! -->
         <table tableName="${tableName.1}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true"/>
-
         <table tableName="${tableName.2}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true"/>
-
         <table tableName="${tableName.3}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.4}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.5}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.6}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.7}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.8}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.9}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.10}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true"/>
+        <table tableName="${tableName.11}"  enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true"/>
     </context>
 </generatorConfiguration>

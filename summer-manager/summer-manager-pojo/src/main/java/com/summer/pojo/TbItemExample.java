@@ -325,73 +325,73 @@ public class TbItemExample {
             return (Criteria) this;
         }
 
-        public Criteria andSellpointIsNull() {
-            addCriterion("sellpoint is null");
+        public Criteria andSellPointIsNull() {
+            addCriterion("sell_point is null");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointIsNotNull() {
-            addCriterion("sellpoint is not null");
+        public Criteria andSellPointIsNotNull() {
+            addCriterion("sell_point is not null");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointEqualTo(String value) {
-            addCriterion("sellpoint =", value, "sellpoint");
+        public Criteria andSellPointEqualTo(String value) {
+            addCriterion("sell_point =", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointNotEqualTo(String value) {
-            addCriterion("sellpoint <>", value, "sellpoint");
+        public Criteria andSellPointNotEqualTo(String value) {
+            addCriterion("sell_point <>", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointGreaterThan(String value) {
-            addCriterion("sellpoint >", value, "sellpoint");
+        public Criteria andSellPointGreaterThan(String value) {
+            addCriterion("sell_point >", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointGreaterThanOrEqualTo(String value) {
-            addCriterion("sellpoint >=", value, "sellpoint");
+        public Criteria andSellPointGreaterThanOrEqualTo(String value) {
+            addCriterion("sell_point >=", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointLessThan(String value) {
-            addCriterion("sellpoint <", value, "sellpoint");
+        public Criteria andSellPointLessThan(String value) {
+            addCriterion("sell_point <", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointLessThanOrEqualTo(String value) {
-            addCriterion("sellpoint <=", value, "sellpoint");
+        public Criteria andSellPointLessThanOrEqualTo(String value) {
+            addCriterion("sell_point <=", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointLike(String value) {
-            addCriterion("sellpoint like", value, "sellpoint");
+        public Criteria andSellPointLike(String value) {
+            addCriterion("sell_point like", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointNotLike(String value) {
-            addCriterion("sellpoint not like", value, "sellpoint");
+        public Criteria andSellPointNotLike(String value) {
+            addCriterion("sell_point not like", value, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointIn(List<String> values) {
-            addCriterion("sellpoint in", values, "sellpoint");
+        public Criteria andSellPointIn(List<String> values) {
+            addCriterion("sell_point in", values, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointNotIn(List<String> values) {
-            addCriterion("sellpoint not in", values, "sellpoint");
+        public Criteria andSellPointNotIn(List<String> values) {
+            addCriterion("sell_point not in", values, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointBetween(String value1, String value2) {
-            addCriterion("sellpoint between", value1, value2, "sellpoint");
+        public Criteria andSellPointBetween(String value1, String value2) {
+            addCriterion("sell_point between", value1, value2, "sellPoint");
             return (Criteria) this;
         }
 
-        public Criteria andSellpointNotBetween(String value1, String value2) {
-            addCriterion("sellpoint not between", value1, value2, "sellpoint");
+        public Criteria andSellPointNotBetween(String value1, String value2) {
+            addCriterion("sell_point not between", value1, value2, "sellPoint");
             return (Criteria) this;
         }
 
@@ -465,52 +465,52 @@ public class TbItemExample {
             return (Criteria) this;
         }
 
-        public Criteria andNumEqualTo(Long value) {
+        public Criteria andNumEqualTo(Integer value) {
             addCriterion("num =", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumNotEqualTo(Long value) {
+        public Criteria andNumNotEqualTo(Integer value) {
             addCriterion("num <>", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumGreaterThan(Long value) {
+        public Criteria andNumGreaterThan(Integer value) {
             addCriterion("num >", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumGreaterThanOrEqualTo(Long value) {
+        public Criteria andNumGreaterThanOrEqualTo(Integer value) {
             addCriterion("num >=", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumLessThan(Long value) {
+        public Criteria andNumLessThan(Integer value) {
             addCriterion("num <", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumLessThanOrEqualTo(Long value) {
+        public Criteria andNumLessThanOrEqualTo(Integer value) {
             addCriterion("num <=", value, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumIn(List<Long> values) {
+        public Criteria andNumIn(List<Integer> values) {
             addCriterion("num in", values, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumNotIn(List<Long> values) {
+        public Criteria andNumNotIn(List<Integer> values) {
             addCriterion("num not in", values, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumBetween(Long value1, Long value2) {
+        public Criteria andNumBetween(Integer value1, Integer value2) {
             addCriterion("num between", value1, value2, "num");
             return (Criteria) this;
         }
 
-        public Criteria andNumNotBetween(Long value1, Long value2) {
+        public Criteria andNumNotBetween(Integer value1, Integer value2) {
             addCriterion("num not between", value1, value2, "num");
             return (Criteria) this;
         }
@@ -725,52 +725,52 @@ public class TbItemExample {
             return (Criteria) this;
         }
 
-        public Criteria andStatusEqualTo(Integer value) {
+        public Criteria andStatusEqualTo(Byte value) {
             addCriterion("status =", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotEqualTo(Integer value) {
+        public Criteria andStatusNotEqualTo(Byte value) {
             addCriterion("status <>", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusGreaterThan(Integer value) {
+        public Criteria andStatusGreaterThan(Byte value) {
             addCriterion("status >", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusGreaterThanOrEqualTo(Integer value) {
+        public Criteria andStatusGreaterThanOrEqualTo(Byte value) {
             addCriterion("status >=", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusLessThan(Integer value) {
+        public Criteria andStatusLessThan(Byte value) {
             addCriterion("status <", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusLessThanOrEqualTo(Integer value) {
+        public Criteria andStatusLessThanOrEqualTo(Byte value) {
             addCriterion("status <=", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusIn(List<Integer> values) {
+        public Criteria andStatusIn(List<Byte> values) {
             addCriterion("status in", values, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotIn(List<Integer> values) {
+        public Criteria andStatusNotIn(List<Byte> values) {
             addCriterion("status not in", values, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusBetween(Integer value1, Integer value2) {
+        public Criteria andStatusBetween(Byte value1, Byte value2) {
             addCriterion("status between", value1, value2, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotBetween(Integer value1, Integer value2) {
+        public Criteria andStatusNotBetween(Byte value1, Byte value2) {
             addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }
