@@ -12,6 +12,8 @@
         <module>../summer-commons</module>
         <module>../summer-manager</module>
         <module>../generatorSqlMapCustom</module>
+        <module>../summer-rest</module>
+        <module>../summer-portal</module>
     </modules>
     <properties>
         <junit.version>4.12</junit.version>
