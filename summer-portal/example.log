@@ -1,6 +1,0 @@
-WARN http-bio-8082-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'summer-portal'
-WARN http-bio-8082-exec-6 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/products/249.html] in DispatcherServlet with name 'summer-portal'
-WARN http-bio-8082-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/products/249.html] in DispatcherServlet with name 'summer-portal'
-WARN http-bio-8082-exec-2 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/products/1.html] in DispatcherServlet with name 'summer-portal'
-WARN http-bio-8082-exec-9 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/products/1.html] in DispatcherServlet with name 'summer-portal'
-WARN http-bio-8082-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/products/1.html] in DispatcherServlet with name 'summer-portal'

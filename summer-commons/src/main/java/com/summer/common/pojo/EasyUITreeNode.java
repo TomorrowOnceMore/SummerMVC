@@ -6,7 +6,7 @@ package com.summer.common.pojo;
 public class EasyUITreeNode {
     private long id;
     private String text;
-    private String status;
+    private String state;
 
     public long getId() {
         return id;
@@ -24,11 +24,11 @@ public class EasyUITreeNode {
         this.text = text;
     }
 
-    public String getStatus() {
-        return status;
+    public String getState() {
+        return state;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setState(String state) {
+        this.state = state;
     }
 }
