@@ -32,4 +32,16 @@ public class ContentController {
             return SummerResult.build(500, ExceptionUtil.getStackTrace(e));
         }
     }
+
+    @RequestMapping("/sync/content/{cid}")
+    @ResponseBody
+    public SummerResult syncContent(@PathVariable Long cid) {
+        try {
+            SummerResult result = contentService.syncContent(cid);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return SummerResult.build(500, ExceptionUtil.getStackTrace(e));
+        }
+    }
 }
