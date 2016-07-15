@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.summer.search.service, com.summer.search.dao"/>
+    <!-- 单机版的solr客户端 -->
+    <bean class="org.apache.solr.client.solrj.impl.HttpSolrClient" id="httpSolrClient">
+        <constructor-arg name="baseURL" value="http://172.21.14.118:8080/solr/new_core"/>
+    </bean>
+
+    <!-- 集群版的solr客户端
+    <bean class="org.apache.solr.client.solrj.impl.CloudSolrClient" id="cloudSolrClient">
+        <constructor-arg name="zkHost" value="172.14.118:2181,172.14.118:2182,172.14.118:2182,172.14.118:2183"/>
+        <property name="defaultCollection" value="new_core"/>
+    </bean> -->
+</beans>
