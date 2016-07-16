@@ -290,6 +290,7 @@
 		//取商品id
 		var itemId = "${item.id}";
 		//给商品规格参数tab页绑定事件
+		alert(${item.id})
 		$("#p-con-attr").bind("click", function(){
 			
 			itemControl.getItemParam(itemId);

@@ -4,6 +4,7 @@ import com.summer.common.pojo.SummerResult;
 import com.summer.common.utils.ExceptionUtil;
 import com.summer.pojo.TbItem;
 import com.summer.pojo.TbItemDesc;
+import com.summer.pojo.TbItemParamItem;
 import com.summer.rest.service.ItemService;
 import jdk.nashorn.internal.ir.annotations.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,5 +45,18 @@ public class ItemController {
             e.printStackTrace();
             return SummerResult.build(500, ExceptionUtil.getStackTrace(e));
         }
+    }
+
+    @RequestMapping("/param/{itemId}")
+    @ResponseBody
+    public SummerResult getItemParam(@PathVariable Long itemId) {
+        try {
+            TbItemParamItem itemParamItem = itemService.getItemParamById(itemId);
+            return SummerResult.ok(itemParamItem);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return SummerResult.build(500, ExceptionUtil.getStackTrace(e));
+        }
+
     }
 }
