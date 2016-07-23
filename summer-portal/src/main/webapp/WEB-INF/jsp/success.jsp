@@ -40,7 +40,7 @@
         <div class="mt" id="success_tittle"><s class="icon-succ02"></s><h3 class="ftx-02">感谢您，订单提交成功！</h3>
 		</div>
 		<div class="mc" id="success_detail">	
-		    <ul class="list-order">
+		    <ul class="list-com.summer.order">
 			    <li class="li-st">
 					<div class="fore1">订单号：<a href="javascript:void(0)">${orderId }</a></div>
 					<!-- 货到付款 -->

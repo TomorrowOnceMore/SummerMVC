@@ -17,11 +17,11 @@
 <title>出错了 -淘淘商城</title>
 <!--结算页面样式-->
 <link rel="stylesheet" type="text/css" href="/css/base.css" media="all" />
-<link type="text/css" rel="stylesheet" href="/css/order-commons.css"
+<link type="text/css" rel="stylesheet" href="/css/com.summer.order-commons.css"
 	source="widget" />
 <script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
-<script type="text/javascript" src="/js/order.common.js"></script>
+<script type="text/javascript" src="/js/com.summer.order.common.js"></script>
 <script type="text/javascript" src="/js/jquery.checkout.js"></script>
 </head>
 <body id="mainframe">

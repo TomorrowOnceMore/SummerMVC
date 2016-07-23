@@ -832,8 +832,8 @@ function getBuyUrl(skuId){
     if(eleSkuIdKey) return "http://gate.jd.com/InitCart.aspx?pid="+skuId+"&pcount="+count+"&ptype=1";
     if($.pbuyurl)return $.pbuyurl;
     if($.append_button.attr("href")!="#none")return $.append_button.attr("href");
-    if (pageConfig.product.cat[2] == 4833) return "http://chongzhi.jd.com/order/order_place.action?skuId=" + skuId + "";
-    if (pageConfig.product.cat[2] == 4835 || pageConfig.product.cat[2] == 4836) return "http://card.jd.com/order/order_place.action?skuId=" + skuId + "";
+    if (pageConfig.product.cat[2] == 4833) return "http://chongzhi.jd.com/com.summer.order/order_place.action?skuId=" + skuId + "";
+    if (pageConfig.product.cat[2] == 4835 || pageConfig.product.cat[2] == 4836) return "http://card.jd.com/com.summer.order/order_place.action?skuId=" + skuId + "";
     return "http://gate.jd.com/InitCart.aspx?pid="+skuId+"&pcount="+count+"&ptype=1";
 }
 function chooseType() {

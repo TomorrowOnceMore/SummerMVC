@@ -1358,7 +1358,7 @@ SEARCH.sort_html = function(c) {
         }
         b += a.replace("#class#", class_name).replace("#click#", d).replace("#name#", "上架时间")
     }
-    $("#filter").find("dl.order").html(b)
+    $("#filter").find("dl.com.summer.order").html(b)
 };
 SEARCH.sort = function(a) {
     a = a || "";

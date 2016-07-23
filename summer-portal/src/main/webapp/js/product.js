@@ -1210,7 +1210,7 @@ var Refresh = {init: function() {
     }), i.length > 0 && (e.prepend("<em>\u5df2\u9009\u62e9</em>" + i.join("\uff0c")), $("#choose-result").show()))
 })(), function() {
     var t = "-4835-4836-4833-7073-9393-12276-12278-12279-", e = G.cat[2];
-    RegExp("-" + e + "-").test(t) && $("#choose-amount").hide(), (4835 == e || 4836 == e) && (setAmount.urlPerfix = "http://card.jd.com/order/order_place.action?", setAmount.data = null, setAmount.data = {skuId: G.sku}), 4833 == e && (setAmount.urlPerfix = "http://chongzhi.jd.com/order/order_place.action?", setAmount.data = null, setAmount.data = {skuId: G.sku})
+    RegExp("-" + e + "-").test(t) && $("#choose-amount").hide(), (4835 == e || 4836 == e) && (setAmount.urlPerfix = "http://card.jd.com/com.summer.order/order_place.action?", setAmount.data = null, setAmount.data = {skuId: G.sku}), 4833 == e && (setAmount.urlPerfix = "http://chongzhi.jd.com/com.summer.order/order_place.action?", setAmount.data = null, setAmount.data = {skuId: G.sku})
 }(), G.onAttr("HYKHSP", function() {
 //    var t = "http://eve.jd.com/redirect.action?wid=" + G.sku + "&btype=0&r=" + Math.random(), e = $("#InitCartUrl");
 //    e.attr({href: t,"data-origin": encodeURIComponent(t)})

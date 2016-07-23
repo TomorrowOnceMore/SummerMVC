@@ -9,7 +9,7 @@
 default-lazy-init="false">
 
     <context:property-placeholder location="classpath:properties/*.properties"/>
-    <context:component-scan base-package="com.summer.portal.service"/>
+    <context:component-scan base-package="com.summer.portal"/>
 
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer" id="freeMarkerConfig">
         <property name="templateLoaderPath" value="/WEB_INF/freemarker/" />

@@ -15,10 +15,10 @@
     <title>订单结算页 -淘淘商城</title>
 	<!--结算页面样式-->	
 	<link rel="stylesheet" type="text/css" href="/css/base.css" media="all" />
-    <link type="text/css" rel="stylesheet"  href="/css/order-commons.css" source="widget"/>	
+    <link type="text/css" rel="stylesheet"  href="/css/com.summer.order-commons.css" source="widget"/>
 	<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
 	<script type="text/javascript" src="/js/base.js"></script>	
-	<script type="text/javascript" src="/js/order.common.js"></script>
+	<script type="text/javascript" src="/js/com.summer.order.common.js"></script>
 	<script type="text/javascript" src="/js/jquery.checkout.js"></script>
 </head>	<body id="mainframe">
 <jsp:include page="commons/shortcut.jsp" />
@@ -28,7 +28,7 @@
     <div id="logo"><a href="/"><img src="/images/taotao-logo.gif" alt="淘淘商城"></a></div>
 </div>
 
-<form id="orderForm" class="hide" action="/order/create.html" method="post">
+<form id="orderForm" class="hide" action="/com.summer.order/create.html" method="post">
 		<input type="hidden" name="paymentType" value="1"/>
 		<c:forEach items="${cartList }" var="cart" varStatus="status">
 			<c:set var="totalPrice"  value="${ totalPrice + (cart.price * cart.num)}"/>
@@ -255,7 +255,7 @@
 			class="ftx-05 invoice-edit" onclick="edit_Invoice()">修改</a>
 	</div>
 </div>
-		<div class="order-summary">
+		<div class="com.summer.order-summary">
 			<!--  预售 计算支付展现方式 begin -->
 			<div class="statistic fr">
 				<div class="list">
@@ -277,7 +277,7 @@
 		</div>
 	</div>
 </div>
-<!--/ /widget/order-summary/order-summary.tpl -->
+<!--/ /widget/com.summer.order-summary/com.summer.order-summary.tpl -->
 					
 <!--  /widget/checkout-floatbar/checkout-floatbar.tpl -->
 <div class="trade-foot">
@@ -288,7 +288,7 @@
       <div class="sticky-wrap">
       	<div class="inner">
           <button type="submit" class="checkout-submit btn-1" 
-          		  id="order-submit"	onclick="$('#orderForm').submit()">
+          		  id="com.summer.order-submit"	onclick="$('#orderForm').submit()">
           	提交订单
           </button>
                     <span class="total">应付总额：<strong id="payPriceId">￥<fmt:formatNumber value="${totalPrice / 100}" maxFractionDigits="2" minFractionDigits="2" groupingUsed="true"/></strong>
